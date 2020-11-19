@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,12 @@
 		D980B8CB2566753300C4C5C8 /* GaminHood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D980B8C92566753300C4C5C8 /* GaminHood.xcdatamodeld */; };
 		D980B8CD2566753700C4C5C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D980B8CC2566753700C4C5C8 /* Assets.xcassets */; };
 		D980B8D02566753700C4C5C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D980B8CE2566753700C4C5C8 /* LaunchScreen.storyboard */; };
+		F3CA7972B7BE08FDF34A3689 /* Pods_GaminHood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DCCA5C6D28A93CF3E464DA /* Pods_GaminHood.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25DCCA5C6D28A93CF3E464DA /* Pods_GaminHood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaminHood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E9CC15D46268CBB92DDF0FC /* Pods-GaminHood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaminHood.release.xcconfig"; path = "Target Support Files/Pods-GaminHood/Pods-GaminHood.release.xcconfig"; sourceTree = "<group>"; };
 		D980B8BD2566753300C4C5C8 /* GaminHood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaminHood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D980B8C02566753300C4C5C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D980B8C22566753300C4C5C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		D980B8CC2566753700C4C5C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D980B8CF2566753700C4C5C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D980B8D12566753700C4C5C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1ED5FDEE7C65AB5EA9107A9 /* Pods-GaminHood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaminHood.debug.xcconfig"; path = "Target Support Files/Pods-GaminHood/Pods-GaminHood.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3CA7972B7BE08FDF34A3689 /* Pods_GaminHood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8983279E4D7D0389553FA93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25DCCA5C6D28A93CF3E464DA /* Pods_GaminHood.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D980B8B42566753300C4C5C8 = {
 			isa = PBXGroup;
 			children = (
 				D980B8BF2566753300C4C5C8 /* GaminHood */,
 				D980B8BE2566753300C4C5C8 /* Products */,
+				FE47C2C5A9D84B1BC8B48E0A /* Pods */,
+				B8983279E4D7D0389553FA93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +85,15 @@
 			path = GaminHood;
 			sourceTree = "<group>";
 		};
+		FE47C2C5A9D84B1BC8B48E0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1ED5FDEE7C65AB5EA9107A9 /* Pods-GaminHood.debug.xcconfig */,
+				7E9CC15D46268CBB92DDF0FC /* Pods-GaminHood.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D980B8D42566753700C4C5C8 /* Build configuration list for PBXNativeTarget "GaminHood" */;
 			buildPhases = (
+				BA0CADD81EF416897BE7B10F /* [CP] Check Pods Manifest.lock */,
 				D980B8B92566753300C4C5C8 /* Sources */,
 				D980B8BA2566753300C4C5C8 /* Frameworks */,
 				D980B8BB2566753300C4C5C8 /* Resources */,
+				6E61B359521CE09A1C691223 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +160,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E61B359521CE09A1C691223 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GaminHood/Pods-GaminHood-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GaminHood/Pods-GaminHood-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GaminHood/Pods-GaminHood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA0CADD81EF416897BE7B10F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GaminHood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D980B8B92566753300C4C5C8 /* Sources */ = {
@@ -287,12 +355,14 @@
 		};
 		D980B8D52566753700C4C5C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1ED5FDEE7C65AB5EA9107A9 /* Pods-GaminHood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LD6Q3JZ8VZ;
 				INFOPLIST_FILE = GaminHood/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,12 +376,14 @@
 		};
 		D980B8D62566753700C4C5C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E9CC15D46268CBB92DDF0FC /* Pods-GaminHood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LD6Q3JZ8VZ;
 				INFOPLIST_FILE = GaminHood/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
