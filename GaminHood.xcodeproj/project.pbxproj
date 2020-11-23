@@ -73,16 +73,24 @@
 		D980B8BF2566753300C4C5C8 /* GaminHood */ = {
 			isa = PBXGroup;
 			children = (
+				E8D5913B256BBF7F009F5942 /* Storyboards */,
 				D980B8C02566753300C4C5C8 /* AppDelegate.swift */,
 				D980B8C22566753300C4C5C8 /* SceneDelegate.swift */,
 				D980B8C42566753300C4C5C8 /* ViewController.swift */,
-				D980B8C62566753300C4C5C8 /* Main.storyboard */,
 				D980B8CC2566753700C4C5C8 /* Assets.xcassets */,
-				D980B8CE2566753700C4C5C8 /* LaunchScreen.storyboard */,
 				D980B8D12566753700C4C5C8 /* Info.plist */,
 				D980B8C92566753300C4C5C8 /* GaminHood.xcdatamodeld */,
 			);
 			path = GaminHood;
+			sourceTree = "<group>";
+		};
+		E8D5913B256BBF7F009F5942 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D980B8C62566753300C4C5C8 /* Main.storyboard */,
+				D980B8CE2566753700C4C5C8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		FE47C2C5A9D84B1BC8B48E0A /* Pods */ = {
