@@ -26,29 +26,49 @@
                                     <constraint firstAttribute="width" secondItem="gZC-Rj-O9c" secondAttribute="height" multiplier="15:8" id="Jx5-yC-Wiw"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Pz-mo-OeA">
+                                <rect key="frame" x="75" y="354" width="240" height="384"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="googleLogin" translatesAutoresizingMaskIntoConstraints="NO" id="poa-78-AJc">
+                                        <rect key="frame" x="85" y="0.0" width="70" height="128"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xaJ-yU-IfR">
+                                        <rect key="frame" x="0.0" y="128" width="240" height="128"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u7z-Rx-dM3">
+                                        <rect key="frame" x="0.0" y="256" width="240" height="128"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SsC-jM-C7u"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="0Pz-mo-OeA" firstAttribute="centerX" secondItem="viV-Tj-RHm" secondAttribute="centerX" id="3a6-VT-6eB"/>
                             <constraint firstItem="gZC-Rj-O9c" firstAttribute="top" secondItem="SsC-jM-C7u" secondAttribute="top" constant="84" id="7AJ-bG-17H"/>
+                            <constraint firstItem="0Pz-mo-OeA" firstAttribute="centerY" secondItem="JvE-Sb-Kam" secondAttribute="centerY" constant="124" id="F0D-Rd-6jx"/>
                             <constraint firstItem="JvE-Sb-Kam" firstAttribute="trailing" secondItem="SsC-jM-C7u" secondAttribute="trailing" id="H7b-jt-wQs"/>
                             <constraint firstAttribute="bottom" secondItem="JvE-Sb-Kam" secondAttribute="bottom" id="TCK-r5-NdM"/>
                             <constraint firstItem="JvE-Sb-Kam" firstAttribute="leading" secondItem="SsC-jM-C7u" secondAttribute="leading" id="V42-fj-pQg"/>
                             <constraint firstItem="gZC-Rj-O9c" firstAttribute="leading" secondItem="SsC-jM-C7u" secondAttribute="leading" constant="75" id="q44-Cd-66Q"/>
                             <constraint firstItem="JvE-Sb-Kam" firstAttribute="top" secondItem="viV-Tj-RHm" secondAttribute="top" id="q7N-dd-qX1"/>
+                            <constraint firstItem="0Pz-mo-OeA" firstAttribute="centerX" secondItem="viV-Tj-RHm" secondAttribute="centerX" id="qaO-zs-W8n"/>
+                            <constraint firstItem="0Pz-mo-OeA" firstAttribute="leading" secondItem="gZC-Rj-O9c" secondAttribute="leading" id="sFn-9b-zgz"/>
                             <constraint firstItem="gZC-Rj-O9c" firstAttribute="centerX" secondItem="JvE-Sb-Kam" secondAttribute="centerX" id="v7a-Mn-xML"/>
+                            <constraint firstItem="0Pz-mo-OeA" firstAttribute="top" secondItem="SsC-jM-C7u" secondAttribute="top" constant="310" id="whW-hA-tUC"/>
                             <constraint firstItem="SsC-jM-C7u" firstAttribute="bottom" secondItem="gZC-Rj-O9c" secondAttribute="bottom" constant="554" id="yS5-Rp-zqP"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+            <point key="canvasLocation" x="135.38461538461539" y="114.45497630331754"/>
         </scene>
     </scenes>
     <resources>
         <image name="GAMINHOOD full" width="840" height="561"/>
         <image name="darkBg-straight" width="414" height="896"/>
+        <image name="googleLogin" width="70" height="48"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
