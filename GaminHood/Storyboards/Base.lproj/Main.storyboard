@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GaminHood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="BYZ-38-t0r" customClass="ViewController" customModule="GaminHood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="viV-Tj-RHm">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,6 +92,13 @@
                                     <color key="titleColor" red="0.80010795589999995" green="0.64246910810000002" blue="0.05266580731" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFx-n4-AvX">
+                                <rect key="frame" x="325" y="59" width="39" height="39"/>
+                                <state key="normal" image="lupa"/>
+                                <connections>
+                                    <segue destination="ZgB-YE-Fng" kind="show" id="7zx-Jr-eBg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SsC-jM-C7u"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -101,8 +108,10 @@
                             <constraint firstItem="dTn-Yt-xRr" firstAttribute="leading" secondItem="gZC-Rj-O9c" secondAttribute="leading" id="51n-WE-PFh"/>
                             <constraint firstItem="Odq-a9-kfc" firstAttribute="leading" secondItem="V45-Ig-24W" secondAttribute="leading" id="5xe-8U-YEk"/>
                             <constraint firstItem="gZC-Rj-O9c" firstAttribute="top" secondItem="SsC-jM-C7u" secondAttribute="top" constant="84" id="7AJ-bG-17H"/>
+                            <constraint firstItem="aFx-n4-AvX" firstAttribute="leading" secondItem="SsC-jM-C7u" secondAttribute="leading" constant="325" id="AYK-bT-t9X"/>
                             <constraint firstItem="D40-xx-UTr" firstAttribute="leading" secondItem="2at-jY-sa6" secondAttribute="trailing" constant="31" id="BRk-5y-1Te"/>
                             <constraint firstItem="MtV-xu-0Sy" firstAttribute="leading" secondItem="D40-xx-UTr" secondAttribute="trailing" constant="28" id="BnJ-i8-fwH"/>
+                            <constraint firstItem="aFx-n4-AvX" firstAttribute="top" secondItem="SsC-jM-C7u" secondAttribute="top" constant="15" id="CYo-6U-e32"/>
                             <constraint firstItem="JM5-XT-tVL" firstAttribute="leading" secondItem="Odq-a9-kfc" secondAttribute="leading" id="EpK-nd-Tjy"/>
                             <constraint firstItem="JM5-XT-tVL" firstAttribute="trailing" secondItem="Odq-a9-kfc" secondAttribute="trailing" id="Fub-9G-ke2"/>
                             <constraint firstItem="JvE-Sb-Kam" firstAttribute="trailing" secondItem="SsC-jM-C7u" secondAttribute="trailing" id="H7b-jt-wQs"/>
@@ -111,6 +120,7 @@
                             <constraint firstItem="JM5-XT-tVL" firstAttribute="leading" secondItem="SsC-jM-C7u" secondAttribute="leading" constant="73" id="JsV-aH-mgI"/>
                             <constraint firstItem="2at-jY-sa6" firstAttribute="top" secondItem="D40-xx-UTr" secondAttribute="top" id="K7U-M9-BOM"/>
                             <constraint firstItem="nK1-AH-y8d" firstAttribute="bottom" secondItem="MtV-xu-0Sy" secondAttribute="bottom" id="M7F-fg-R9j"/>
+                            <constraint firstItem="SsC-jM-C7u" firstAttribute="trailing" secondItem="aFx-n4-AvX" secondAttribute="trailing" constant="26" id="P9b-BL-2GQ"/>
                             <constraint firstItem="D40-xx-UTr" firstAttribute="top" secondItem="MtV-xu-0Sy" secondAttribute="top" id="PfO-du-db6"/>
                             <constraint firstItem="dTn-Yt-xRr" firstAttribute="top" secondItem="iGF-cV-92j" secondAttribute="bottom" constant="69" id="Rr4-tV-bPJ"/>
                             <constraint firstAttribute="bottom" secondItem="JvE-Sb-Kam" secondAttribute="bottom" id="TCK-r5-NdM"/>
@@ -118,6 +128,7 @@
                             <constraint firstItem="JvE-Sb-Kam" firstAttribute="leading" secondItem="SsC-jM-C7u" secondAttribute="leading" id="V42-fj-pQg"/>
                             <constraint firstItem="SsC-jM-C7u" firstAttribute="bottom" secondItem="2at-jY-sa6" secondAttribute="bottom" constant="99" id="Wfj-x5-c32"/>
                             <constraint firstItem="iGF-cV-92j" firstAttribute="top" secondItem="V45-Ig-24W" secondAttribute="bottom" constant="22" id="bXI-yd-bGI"/>
+                            <constraint firstItem="SsC-jM-C7u" firstAttribute="bottom" secondItem="aFx-n4-AvX" secondAttribute="bottom" constant="712" id="bqv-g9-Xg6"/>
                             <constraint firstItem="V45-Ig-24W" firstAttribute="leading" secondItem="iGF-cV-92j" secondAttribute="leading" id="dWM-xL-bj7"/>
                             <constraint firstItem="dTn-Yt-xRr" firstAttribute="trailing" secondItem="gZC-Rj-O9c" secondAttribute="trailing" id="euI-8e-HJm"/>
                             <constraint firstItem="V45-Ig-24W" firstAttribute="centerX" secondItem="dTn-Yt-xRr" secondAttribute="centerX" id="fhQ-5M-ws4"/>
@@ -139,6 +150,16 @@
             </objects>
             <point key="canvasLocation" x="135.38461538461539" y="114.45497630331754"/>
         </scene>
+        <!--SearchGame-->
+        <scene sceneID="MDb-Ta-6S7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchGame" id="ZgB-YE-Fng" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="deQ-Uv-sED"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dXf-jE-e46" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727" y="114"/>
+        </scene>
     </scenes>
     <resources>
         <image name="GAMINHOOD full" width="840" height="561"/>
@@ -146,6 +167,7 @@
         <image name="darkBg-straight" width="414" height="896"/>
         <image name="facebook" width="1220" height="1220"/>
         <image name="google" width="1220" height="1220"/>
+        <image name="lupa" width="78" height="78"/>
         <image name="twitter" width="1232" height="1232"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

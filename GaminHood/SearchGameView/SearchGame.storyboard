@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0le-x8-KEr">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Game Controller-->
+        <scene sceneID="o4G-OW-xjW">
+            <objects>
+                <viewController id="0le-x8-KEr" customClass="SearchGameController" customModule="GaminHood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vZw-fA-Dps">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darkBg-straight" translatesAutoresizingMaskIntoConstraints="NO" id="o0x-3k-vl0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GAMINHOOD" translatesAutoresizingMaskIntoConstraints="NO" id="u4o-XO-TnU">
+                                <rect key="frame" x="87" y="82" width="240" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="um1-0N-WF6"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tAR-Cy-OpM">
+                                <rect key="frame" x="37" y="228" width="341" height="634"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <searchBar contentMode="redraw" misplaced="YES" searchBarStyle="minimal" placeholder="Search your game" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mB9-k6-dJH">
+                                <rect key="frame" x="37" y="146" width="341" height="56"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="D4F-Pa-S1Y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tAR-Cy-OpM" firstAttribute="top" secondItem="mB9-k6-dJH" secondAttribute="bottom" constant="26" id="5Jn-Og-6pD"/>
+                            <constraint firstItem="o0x-3k-vl0" firstAttribute="centerX" secondItem="vZw-fA-Dps" secondAttribute="centerX" id="AYo-Fu-2W5"/>
+                            <constraint firstItem="mB9-k6-dJH" firstAttribute="trailing" secondItem="tAR-Cy-OpM" secondAttribute="trailing" id="CJW-oS-bAL"/>
+                            <constraint firstItem="mB9-k6-dJH" firstAttribute="centerX" secondItem="o0x-3k-vl0" secondAttribute="centerX" id="OP8-dI-vJY"/>
+                            <constraint firstItem="mB9-k6-dJH" firstAttribute="leading" secondItem="D4F-Pa-S1Y" secondAttribute="leading" constant="37" id="PbK-Va-xpc"/>
+                            <constraint firstItem="u4o-XO-TnU" firstAttribute="leading" secondItem="D4F-Pa-S1Y" secondAttribute="leading" constant="87" id="SK7-R9-xSD"/>
+                            <constraint firstItem="mB9-k6-dJH" firstAttribute="leading" secondItem="tAR-Cy-OpM" secondAttribute="leading" id="buy-A6-Q6m"/>
+                            <constraint firstItem="o0x-3k-vl0" firstAttribute="centerY" secondItem="vZw-fA-Dps" secondAttribute="centerY" id="et6-QF-bf5"/>
+                            <constraint firstItem="tAR-Cy-OpM" firstAttribute="bottom" secondItem="D4F-Pa-S1Y" secondAttribute="bottom" id="kjC-rh-lVm"/>
+                            <constraint firstItem="mB9-k6-dJH" firstAttribute="centerX" secondItem="u4o-XO-TnU" secondAttribute="centerX" id="oG6-sJ-3sz"/>
+                            <constraint firstItem="u4o-XO-TnU" firstAttribute="top" secondItem="D4F-Pa-S1Y" secondAttribute="top" constant="38" id="pT4-9K-XOh"/>
+                            <constraint firstItem="mB9-k6-dJH" firstAttribute="top" secondItem="u4o-XO-TnU" secondAttribute="bottom" constant="13" id="wsh-PC-Hjd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableViewGames" destination="tAR-Cy-OpM" id="Mpt-VQ-t2H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2LV-Sc-H1k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97.101449275362327" y="-70.3125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GAMINHOOD" width="1062" height="186"/>
+        <image name="darkBg-straight" width="414" height="896"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
