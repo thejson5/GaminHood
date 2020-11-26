@@ -11,8 +11,6 @@ class SearchGameController: UIViewController{
     
     @IBOutlet weak var tableViewGames: UITableView!
     
-    var games: [String] = ["The last of us", "god of war", "fifa21", "spyro"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -28,9 +26,14 @@ class SearchGameController: UIViewController{
     
 }
 
+var viewModel = SearchGameViewModel()
+
 extension SearchGameController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return games.count
+        if let games = viewModel.games {
+            return games.count
+        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
