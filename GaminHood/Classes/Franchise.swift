@@ -8,9 +8,9 @@
 import Foundation
 import Alamofire
 
-class Franchise : Codable {
+class Franchise: Codable {
     
-    let checksum : UUID?
+    let checksum: UUID?
     let games: [Game]
     
     enum CodingKeys: String, CodingKey {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0669A7252576479700B63CC1 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669A7242576479700B63CC1 /* Api.swift */; };
 		D8D91FC8256E5EFE00DDE78E /* SearchGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D91FC7256E5EFE00DDE78E /* SearchGame.storyboard */; };
 		D8D91FCB256E5F2800DDE78E /* SearchGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D91FCA256E5F2800DDE78E /* SearchGameController.swift */; };
 		D8D91FD2256E67D400DDE78E /* SearchGameViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D91FD0256E67D400DDE78E /* SearchGameViewCell.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0669A7242576479700B63CC1 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		25DCCA5C6D28A93CF3E464DA /* Pods_GaminHood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaminHood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E9CC15D46268CBB92DDF0FC /* Pods-GaminHood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaminHood.release.xcconfig"; path = "Target Support Files/Pods-GaminHood/Pods-GaminHood.release.xcconfig"; sourceTree = "<group>"; };
 		D8D91FC7256E5EFE00DDE78E /* SearchGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchGame.storyboard; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				D91BD35F256FB567002F6749 /* Platforms.swift */,
 				D91BD362256FB630002F6749 /* Platform_logo.swift */,
 				D91BD365256FB701002F6749 /* Franchise.swift */,
+				0669A7242576479700B63CC1 /* Api.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				D91BD358256FB09E002F6749 /* SearchGameViewModel.swift in Sources */,
 				D91BD366256FB701002F6749 /* Franchise.swift in Sources */,
 				D980B8C52566753300C4C5C8 /* ViewController.swift in Sources */,
+				0669A7252576479700B63CC1 /* Api.swift in Sources */,
 				D980B8C12566753300C4C5C8 /* AppDelegate.swift in Sources */,
 				D8D91FCB256E5F2800DDE78E /* SearchGameController.swift in Sources */,
 				D980B8C32566753300C4C5C8 /* SceneDelegate.swift in Sources */,
