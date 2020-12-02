@@ -27,7 +27,13 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configureViews()
     }
     
+    private func configureViews() {
+        gameImage.configure()
+        gameScore.configure()
+    }
    
 }
