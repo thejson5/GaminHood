@@ -77,9 +77,9 @@
 			children = (
 				D8D91FD0256E67D400DDE78E /* SearchGameViewCell.swift */,
 				D8D91FCA256E5F2800DDE78E /* SearchGameController.swift */,
+				D91BD357256FB09E002F6749 /* SearchGameViewModel.swift */,
 				D8D91FD1256E67D400DDE78E /* SearchGameViewCell.xib */,
 				D8D91FC7256E5EFE00DDE78E /* SearchGame.storyboard */,
-				D91BD357256FB09E002F6749 /* SearchGameViewModel.swift */,
 			);
 			path = SearchGameView;
 			sourceTree = "<group>";
@@ -118,11 +118,10 @@
 			isa = PBXGroup;
 			children = (
 				D91BD35A256FB180002F6749 /* Classes */,
+				E8D5913B256BBF7F009F5942 /* Main */,
 				D8D91FD5256E6DDD00DDE78E /* SearchGameView */,
-				E8D5913B256BBF7F009F5942 /* Storyboards */,
 				D980B8C02566753300C4C5C8 /* AppDelegate.swift */,
 				D980B8C22566753300C4C5C8 /* SceneDelegate.swift */,
-				D980B8C42566753300C4C5C8 /* ViewController.swift */,
 				D980B8CC2566753700C4C5C8 /* Assets.xcassets */,
 				D980B8D12566753700C4C5C8 /* Info.plist */,
 				D980B8C92566753300C4C5C8 /* GaminHood.xcdatamodeld */,
@@ -130,13 +129,14 @@
 			path = GaminHood;
 			sourceTree = "<group>";
 		};
-		E8D5913B256BBF7F009F5942 /* Storyboards */ = {
+		E8D5913B256BBF7F009F5942 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				D980B8CE2566753700C4C5C8 /* LaunchScreen.storyboard */,
 				D980B8C62566753300C4C5C8 /* Main.storyboard */,
+				D980B8C42566753300C4C5C8 /* ViewController.swift */,
 			);
-			path = Storyboards;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		FE47C2C5A9D84B1BC8B48E0A /* Pods */ = {
