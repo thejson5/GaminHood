@@ -9,7 +9,5 @@ target 'GaminHood' do
 
 pod 'Alamofire'
 pod 'Kingfisher'
-pod 'IGDB-SWIFT-API', git: "https://github.com/husnjak/IGDB-API-SWIFT.git"
-
 
 end
