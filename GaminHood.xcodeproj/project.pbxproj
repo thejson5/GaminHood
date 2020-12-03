@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0669A7252576479700B63CC1 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669A7242576479700B63CC1 /* Api.swift */; };
-		16929DA32577A20600572E38 /* sampleData.json in Sources */ = {isa = PBXBuildFile; fileRef = 16929DA22577A20600572E38 /* sampleData.json */; };
-		16929DA82577A26300572E38 /* PackGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16929DA72577A26300572E38 /* PackGame.swift */; };
-		16929DC02577BD2300572E38 /* AllCovers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16929DBF2577BD2300572E38 /* AllCovers.swift */; };
+		D83F52322577A3550031EAA5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F52312577A3550031EAA5 /* GameViewController.swift */; };
+		D85E262C2577A42600D20A74 /* GameView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85E262B2577A42600D20A74 /* GameView.storyboard */; };
+		D85E26352577CF1700D20A74 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85E26342577CF1700D20A74 /* UIViewExtensions.swift */; };
 		D8D91FC8256E5EFE00DDE78E /* SearchGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D91FC7256E5EFE00DDE78E /* SearchGame.storyboard */; };
 		D8D91FCB256E5F2800DDE78E /* SearchGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D91FCA256E5F2800DDE78E /* SearchGameController.swift */; };
 		D8D91FD2256E67D400DDE78E /* SearchGameViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D91FD0256E67D400DDE78E /* SearchGameViewCell.swift */; };
@@ -36,6 +36,9 @@
 		16929DBF2577BD2300572E38 /* AllCovers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCovers.swift; sourceTree = "<group>"; };
 		25DCCA5C6D28A93CF3E464DA /* Pods_GaminHood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaminHood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E9CC15D46268CBB92DDF0FC /* Pods-GaminHood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaminHood.release.xcconfig"; path = "Target Support Files/Pods-GaminHood/Pods-GaminHood.release.xcconfig"; sourceTree = "<group>"; };
+		D83F52312577A3550031EAA5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D85E262B2577A42600D20A74 /* GameView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameView.storyboard; sourceTree = "<group>"; };
+		D85E26342577CF1700D20A74 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		D8D91FC7256E5EFE00DDE78E /* SearchGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchGame.storyboard; sourceTree = "<group>"; };
 		D8D91FCA256E5F2800DDE78E /* SearchGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGameController.swift; sourceTree = "<group>"; };
 		D8D91FD0256E67D400DDE78E /* SearchGameViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGameViewCell.swift; sourceTree = "<group>"; };
@@ -103,6 +106,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D83F52302577A2650031EAA5 /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				D83F52312577A3550031EAA5 /* GameViewController.swift */,
+				D85E262B2577A42600D20A74 /* GameView.storyboard */,
+			);
+			path = GameView;
+			sourceTree = "<group>";
+		};
+		D85E26332577CF0400D20A74 /* UIViewExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				D85E26342577CF1700D20A74 /* UIViewExtensions.swift */,
+			);
+			path = UIViewExtensions;
+			sourceTree = "<group>";
+		};
 		D8D91FD5256E6DDD00DDE78E /* SearchGameView */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,12 +166,13 @@
 		D980B8BF2566753300C4C5C8 /* GaminHood */ = {
 			isa = PBXGroup;
 			children = (
-				16929DA02577A18F00572E38 /* Data */,
+				D85E26332577CF0400D20A74 /* UIViewExtensions */,
 				D91BD35A256FB180002F6749 /* Classes */,
 				E8D5913B256BBF7F009F5942 /* Main */,
 				D8D91FD5256E6DDD00DDE78E /* SearchGameView */,
-				D980B8C02566753300C4C5C8 /* AppDelegate.swift */,
+				D83F52302577A2650031EAA5 /* GameView */,
 				D980B8C22566753300C4C5C8 /* SceneDelegate.swift */,
+				D980B8C02566753300C4C5C8 /* AppDelegate.swift */,
 				D980B8CC2566753700C4C5C8 /* Assets.xcassets */,
 				D980B8D12566753700C4C5C8 /* Info.plist */,
 				D980B8C92566753300C4C5C8 /* GaminHood.xcdatamodeld */,
@@ -242,6 +263,7 @@
 				D980B8CD2566753700C4C5C8 /* Assets.xcassets in Resources */,
 				D980B8C82566753300C4C5C8 /* Main.storyboard in Resources */,
 				D8D91FD3256E67D400DDE78E /* SearchGameViewCell.xib in Resources */,
+				D85E262C2577A42600D20A74 /* GameView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,11 +324,13 @@
 				D980B8C52566753300C4C5C8 /* ViewController.swift in Sources */,
 				0669A7252576479700B63CC1 /* Api.swift in Sources */,
 				D980B8C12566753300C4C5C8 /* AppDelegate.swift in Sources */,
+				D85E26352577CF1700D20A74 /* UIViewExtensions.swift in Sources */,
 				D8D91FCB256E5F2800DDE78E /* SearchGameController.swift in Sources */,
 				16929DA32577A20600572E38 /* sampleData.json in Sources */,
 				D980B8C32566753300C4C5C8 /* SceneDelegate.swift in Sources */,
 				16929DC02577BD2300572E38 /* AllCovers.swift in Sources */,
 				D91BD35C256FB18F002F6749 /* Game.swift in Sources */,
+				D83F52322577A3550031EAA5 /* GameViewController.swift in Sources */,
 				D91BD363256FB630002F6749 /* Platform_logo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
