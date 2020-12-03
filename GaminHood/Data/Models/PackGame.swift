@@ -40,7 +40,7 @@ enum Status: Int, Codable, CustomStringConvertible {
     
 }
 
-enum Platforms: Int, Codable, CustomStringConvertible {
+enum Platforms: Int, Codable {
     case ps2 = 0
     case ps3
     case ps4
@@ -94,7 +94,7 @@ enum Platforms: Int, Codable, CustomStringConvertible {
     }
 }
 
-enum Categories: Int, Codable, CustomStringConvertible {
+enum Categories: Int, Codable {
     case action = 0
     case rpg
     case survivalHorror
@@ -129,7 +129,7 @@ enum Players: Int, Codable {
     case multiPlayer
 }
 
-enum Pegi: Int, Codable, CustomStringConvertible {
+enum Pegi: Int, Codable {
     case allAges = 0
     case seven
     case tirtheen
@@ -147,7 +147,7 @@ enum Pegi: Int, Codable, CustomStringConvertible {
     }
 }
 
-enum Publishers: Int, Codable, CustomStringConvertible {
+enum Publishers: Int, Codable {
     case nintendo = 0
     case bethesda
     case electronicArts
@@ -171,7 +171,7 @@ enum Publishers: Int, Codable, CustomStringConvertible {
     }
 }
 
-enum Developers: Int, Codable, CustomStringConvertible {
+enum Developers: Int, Codable {
     case nintendo = 0
     case bethesda
     case eaSports

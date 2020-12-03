@@ -11,9 +11,24 @@ class SearchGameController: UIViewController{
     
     @IBOutlet weak var tableViewGames: UITableView!
     
+    private func readLocalFile(forName name: String) -> Data? {
+        do {
+            if let bundlePath = Bundle.main.path(forResource: name,
+                                                 ofType: "json") {
+                return try String(contentsOfFile: bundlePath).data(using: .utf8)
+            }
+            return nil
+        } catch {
+            print(error)
+            return nil
+        }
+    }
+    
+    var gaminhoodPacks: Packs = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        loadData()
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "ghBackground")!)
         configureTable()
@@ -24,7 +39,22 @@ class SearchGameController: UIViewController{
         tableViewGames.delegate = self
     }
     
+    private func loadData() {
+        guard let jsonData = readLocalFile(forName: "sampleData") else {
+            return
+        }
+        
+        do {
+            let packs = try JSONDecoder().decode(Packs.self, from: jsonData)
+            print(packs)
+            gaminhoodPacks.append(contentsOf: packs)
+        } catch {
+            print(error)
+        }
+    }
 }
+
+
 
 var viewModel = SearchGameViewModel()
 
