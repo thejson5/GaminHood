@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ghBackground" translatesAutoresizingMaskIntoConstraints="NO" id="5hC-0v-Ojz">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GAMINHOOD full" translatesAutoresizingMaskIntoConstraints="NO" id="hpu-PS-FYs">
+                                <rect key="frame" x="75" y="128" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hpu-PS-FYs" secondAttribute="height" multiplier="15:8" id="oWQ-5q-O0O"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hpu-PS-FYs" secondAttribute="bottom" constant="554" id="5Y1-Hk-TbV"/>
+                            <constraint firstItem="5hC-0v-Ojz" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="95z-ow-QrE"/>
+                            <constraint firstItem="5hC-0v-Ojz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="J4w-YI-9da"/>
+                            <constraint firstAttribute="bottom" secondItem="5hC-0v-Ojz" secondAttribute="bottom" id="Oft-HM-56a"/>
+                            <constraint firstItem="hpu-PS-FYs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="OgB-hn-q12"/>
+                            <constraint firstItem="hpu-PS-FYs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="bBL-xG-T8O"/>
+                            <constraint firstItem="hpu-PS-FYs" firstAttribute="centerX" secondItem="5hC-0v-Ojz" secondAttribute="centerX" id="nWE-Su-PEo"/>
+                            <constraint firstItem="5hC-0v-Ojz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pFl-29-C8h"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GAMINHOOD full" width="840" height="561"/>
+        <image name="ghBackground" width="414" height="896"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
