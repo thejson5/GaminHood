@@ -129,9 +129,9 @@
 		D8D91FD5256E6DDD00DDE78E /* SearchGameView */ = {
 			isa = PBXGroup;
 			children = (
-				D8D91FD0256E67D400DDE78E /* SearchGameViewCell.swift */,
-				D8D91FCA256E5F2800DDE78E /* SearchGameController.swift */,
 				D91BD357256FB09E002F6749 /* SearchGameViewModel.swift */,
+				D8D91FCA256E5F2800DDE78E /* SearchGameController.swift */,
+				D8D91FD0256E67D400DDE78E /* SearchGameViewCell.swift */,
 				D8D91FD1256E67D400DDE78E /* SearchGameViewCell.xib */,
 				D8D91FC7256E5EFE00DDE78E /* SearchGame.storyboard */,
 			);

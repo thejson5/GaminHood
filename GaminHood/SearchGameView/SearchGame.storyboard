@@ -59,6 +59,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="searchBar" destination="mB9-k6-dJH" id="sgN-Vy-mAi"/>
                         <outlet property="tableViewGames" destination="tAR-Cy-OpM" id="Mpt-VQ-t2H"/>
                     </connections>
                 </viewController>

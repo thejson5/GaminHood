@@ -16,6 +16,8 @@ class SearchGameViewCell: UITableViewCell {
     @IBOutlet weak var nameGame: UILabel!
     @IBOutlet weak var gameImage: UIImageView!
     
+    var game: Game?
+    
     override func prepareForReuse() {
         gameImage.image = nil
         nameGame.text = nil

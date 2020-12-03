@@ -10,6 +10,21 @@ import UIKit
 class SearchGameController: UIViewController{
     
     @IBOutlet weak var tableViewGames: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    var gaminhoodPacks: Packs = []
+    var viewModel = SearchGameViewModel()
+
+    private func searchGame() {
+        if let games = viewModel.games {
+            for game in games {
+                if searchBar.text == game.name {
+                    SearchGameViewCell().nameGame.text = game.name
+                    SearchGameViewCell().gameImage.image = UIImage(named: game.coverImage.first ?? "No image")
+                }
+            }
+        }
+    }
     
     private func readLocalFile(forName name: String) -> Data? {
         do {
@@ -22,21 +37,6 @@ class SearchGameController: UIViewController{
             print(error)
             return nil
         }
-    }
-    
-    var gaminhoodPacks: Packs = []
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        loadData()
-        
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "ghBackground")!)
-        configureTable()
-    }
-    
-    func configureTable() {
-        tableViewGames.dataSource = self
-        tableViewGames.delegate = self
     }
     
     private func loadData() {
@@ -52,11 +52,21 @@ class SearchGameController: UIViewController{
             print(error)
         }
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        loadData()
+        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "ghBackground")!)
+        configureTable()
+    }
+    
+    func configureTable() {
+        tableViewGames.dataSource = self
+        tableViewGames.delegate = self
+    }
+    
 }
-
-
-
-var viewModel = SearchGameViewModel()
 
 extension SearchGameController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
