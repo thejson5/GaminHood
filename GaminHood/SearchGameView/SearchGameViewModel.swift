@@ -9,6 +9,6 @@ import Foundation
 
 class SearchGameViewModel {
     
-    var games: Packs?
+    var games: [PackGame]?
     
 }

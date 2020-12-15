@@ -11,7 +11,7 @@ import Alamofire
 class Franchise: Codable {
     
     let checksum: UUID?
-    let games: [Game]
+    let games: [PackGame]
     
     enum CodingKeys: String, CodingKey {
         

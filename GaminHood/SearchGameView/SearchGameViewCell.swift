@@ -16,7 +16,7 @@ class SearchGameViewCell: UITableViewCell {
     @IBOutlet weak var nameGame: UILabel!
     @IBOutlet weak var gameImage: UIImageView!
     
-    var game: Game?
+    var game: PackGame?
     
     override func prepareForReuse() {
         gameImage.image = nil
@@ -27,17 +27,22 @@ class SearchGameViewCell: UITableViewCell {
         
     }
     
+    
+ 
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        
+      
         // Initialization code
         
     }
     
-    func configureCell(gamePhoto: String, game: String, date: String, like: UIButton, logo: String) {
+    func configureCell(gamePhoto: String, game: String, date: String, logo: String) {
         gameImage.image = UIImage(named: gamePhoto)
         nameGame.text = game
         releaseDate.text = date
-        likeButton = like
         logoConsole.image = UIImage(named: logo)
     }
     

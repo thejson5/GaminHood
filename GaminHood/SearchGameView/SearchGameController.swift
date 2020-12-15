@@ -14,18 +14,22 @@ class SearchGameController: UIViewController{
     
     var gaminhoodPacks: Packs = []
     var viewModel = SearchGameViewModel()
+    
 
     private func searchGame() {
         if let games = viewModel.games {
-            for game in games {
-                if searchBar.text == game.name {
-                    SearchGameViewCell().nameGame.text = game.name
-                    SearchGameViewCell().gameImage.image = UIImage(named: game.coverImage.first ?? "No image")
+            for i in games {
+                if searchBar.text == i.name {
+                    
+                    /*SearchGameViewCell().game = i*/
+                   
                 }
             }
         }
     }
     
+    
+    //Lee el Json.
     private func readLocalFile(forName name: String) -> Data? {
         do {
             if let bundlePath = Bundle.main.path(forResource: name,
@@ -69,6 +73,7 @@ class SearchGameController: UIViewController{
 }
 
 extension SearchGameController: UITableViewDelegate, UITableViewDataSource{
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let games = viewModel.games {
             return games.count
@@ -79,11 +84,13 @@ extension SearchGameController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "SearchGameViewCell", for: indexPath as IndexPath) as? SearchGameViewCell else {
+            
+          
             return UITableViewCell()
             
         }
         
-//        cell.configureCell(gamePhoto: "", game: "", date: "", like: <#T##UIButton#>, logo: "")
+    cell.configureCell(gamePhoto: SearchGameViewCell().game?.coverImage, game: SearchGameViewCell().game?.name, date: SearchGameViewCell().game?.firstReleaseDate, logo: SearchGameViewCell().game?.platform.platformNames)
         
         
         return cell

@@ -12,7 +12,9 @@ typealias Packs = [PackGame]
 struct PackGame: Codable {
     var id: Int
     var coverPack: String
-    var game: Game
+    var name: String
+    var screenshots: [String]
+    var coverImage: [String]
     var firstReleaseDate: Date
     var summary: String
     var platform: Platforms
@@ -24,10 +26,10 @@ struct PackGame: Codable {
     var developer: Developers
     var metacritics: String
  
-    
 }
+ 
 
-enum Status: Int, Codable, CustomStringConvertible {
+enum Status: Int, Codable {
     case available = 0
     case comingSoon
     
